@@ -807,7 +807,7 @@ padding: 0 18px;
           </>
 
           <div className="footer-info">
-            <img className="footer-brand" src="/assets/logo-header-mo.svg" alt="Magnum Bridge" />
+            <img className="footer-brand" src="/assets/logo_gray.svg" alt="Magnum Bridge" />
             <p className="footer-company">(주)매그넘브릿지</p>
             <address>서울특별시 강남구 봉은사로 443, 8층 (삼성동, 로얄빌딩)</address>
             <p className="footer-contact">TEL) 02-6941-0828&nbsp;&nbsp;/&nbsp;&nbsp;FAX) 02-6941-0829</p>

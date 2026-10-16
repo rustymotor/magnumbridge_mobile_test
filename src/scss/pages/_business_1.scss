@@ -29,9 +29,9 @@
       opacity: 1;
       pointer-events: none;
       background:
-        linear-gradient(90deg, #05080de8 0 42%, #10141b36 70%),
+        linear-gradient(90deg, #05080de8 0 0%, #10141b36 70%),
         linear-gradient(0deg, #0008, transparent 45%),
-        url("https://images.unsplash.com/photo-1486983493968-6550b6afbe96?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=1400") center / cover no-repeat;
+        url("/assets/visual_top_business_1.jpg") center / cover no-repeat;
     }
 
     .platform-hero-copy {
