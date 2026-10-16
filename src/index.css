@@ -2215,7 +2215,7 @@ footer {
   z-index: 0;
   width: calc(100% - 40px);
   max-width: 680px;
-  margin: 0;
+  margin: 0 auto;
   display: grid;
   gap: 10px;
 }
