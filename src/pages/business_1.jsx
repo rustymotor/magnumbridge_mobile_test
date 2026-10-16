@@ -340,9 +340,9 @@ export default function BusinessPage({ emptyContent = false, heroSection = "Busi
                 <i aria-hidden="true" />
               </summary>
               <div className="footer-submenu">
-                <a href="#contact">SI 사업</a>
-                <a href="#contact">Platform &amp; Solution</a>
-                <a href="#contact">IT Consulting</a>
+                <a href="/platform-solution">Platform & Solution</a>
+                <a href="/product">Product</a>
+                <a href="/it-service">IT Service</a>
               </div>
             </details>
             <details className="footer-menu">
@@ -351,9 +351,11 @@ export default function BusinessPage({ emptyContent = false, heroSection = "Busi
                 <i aria-hidden="true" />
               </summary>
               <div className="footer-submenu">
-                <a href="#contact">회사소개</a>
-                <a href="#contact">연혁</a>
-                <a href="#contact">오시는 길</a>
+                <a href="/about-magnumbridge">About Magnumbridge</a>
+                <a href="/customer-partner">Customer & Partner</a>
+                <a href="/vision-mission">Vision & Mission</a>
+                <a href="/history">History</a>
+                <a href="/qa">Q&A</a>
               </div>
             </details>
             <details className="footer-menu">
@@ -362,9 +364,9 @@ export default function BusinessPage({ emptyContent = false, heroSection = "Busi
                 <i aria-hidden="true" />
               </summary>
               <div className="footer-submenu">
-                <a href="#contact">인재상</a>
-                <a href="#contact">채용안내</a>
-                <a href="#contact">채용공고</a>
+                <a href="/ideal-employee">Ideal employee</a>
+                <a href="/benefit">Recruitment</a>
+                <a href="/recruitment">My Application</a>
               </div>
             </details>
           </div>
