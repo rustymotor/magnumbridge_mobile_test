@@ -477,7 +477,7 @@
     .about-organization-chart {
       width: min(100%, 1500px);
       margin: 0 auto;
-      padding: 0 0 12px;
+      padding: 0 40px 12px;
       overflow-x: auto;
       background: #000;
       scrollbar-color: #777 #1c1c1c;
@@ -500,7 +500,7 @@
       }
 
       img {
-        width: max(100%, 1200px);
+        width: 800px;
         max-width: none;
         height: auto;
         display: block;
