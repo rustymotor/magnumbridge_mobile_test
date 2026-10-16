@@ -1718,11 +1718,9 @@ function ApplicationLookup() {
 
         <div className="application-lookup-fields">
           <label>
-            <span className="blind">이메일</span>
             <input type="email" name="email" placeholder="이메일" autoComplete="email" required />
           </label>
           <label>
-            <span className="blind">비밀번호</span>
             <input type="password" name="password" placeholder="비밀번호" autoComplete="current-password" required />
           </label>
         </div>

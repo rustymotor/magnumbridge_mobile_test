@@ -13,10 +13,10 @@
   // Hero
   .platform-hero {
     position: relative;
-    height: 703px;
+    // height: 703px;
     min-height: 500px;
     margin-top: 64px;
-    padding: 0 0 76px;
+    padding: 0;
     color: #fff;
     background-color: #fff;
 
@@ -329,7 +329,7 @@
   }
 
   .about-overview-section {
-    padding: 60px 32px 94px !important;
+    padding: 30px 32px 94px !important;
     background: #fff;
 
     .about-stats-grid {
