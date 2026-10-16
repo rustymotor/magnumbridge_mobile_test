@@ -2762,7 +2762,7 @@ footer {
   }
 }
 .platform-page .qa-section {
-  padding: 92px 0 120px !important;
+  padding: 0px 0 120px !important;
   color: #2c2c2e;
   background: #fff;
 }
@@ -2786,14 +2786,12 @@ footer {
   position: relative;
 }
 .platform-page .qa-section select {
-  width: 224px;
-  height: 84px;
-  padding: 0 58px 0 25px;
+  width: 105px;
+  height: 44px;
+  padding: 0 27px 0 10px;
+  font-size: 14px;
   border: 2px solid #d4d4d4;
-  border-radius: 10px;
   color: #292929;
-  font: inherit;
-  font-size: 30px;
   background: linear-gradient(45deg, transparent 50%, #666 50%) calc(100% - 29px) 35px/11px 11px no-repeat, linear-gradient(135deg, #666 50%, transparent 50%) calc(100% - 18px) 35px/11px 11px no-repeat, #fff;
   appearance: none;
 }
@@ -2856,9 +2854,6 @@ footer {
   white-space: nowrap;
 }
 @media (max-width: 900px) {
-  .platform-page .qa-section {
-    padding: 56px 0 80px !important;
-  }
   .platform-page .qa-section .qa-inner {
     width: calc(100% - 40px);
   }
@@ -2907,7 +2902,7 @@ footer {
     gap: 16px;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 1000px) {
   .platform-page .qa-section .qa-filters {
     gap: 8px;
   }

@@ -2185,7 +2185,7 @@
   }
 
   .qa-section {
-    padding: 92px 0 120px !important;
+    padding: 0px 0 120px !important;
     color: #2c2c2e;
     background: #fff;
 
@@ -2213,14 +2213,15 @@
     }
 
     select {
-      width: 224px;
-      height: 84px;
-      padding: 0 58px 0 25px;
+      width: 105px;
+      height: 44px;
+      padding: 0 27px 0 10px;
+      font-size: 14px;
       border: 2px solid #d4d4d4;
-      border-radius: 10px;
+      // border-radius: 10px;
       color: #292929;
-      font: inherit;
-      font-size: 30px;
+      // font: inherit;
+      // font-size: 30px;
       background:
         linear-gradient(45deg, transparent 50%, #666 50%) calc(100% - 29px) 35px / 11px 11px no-repeat,
         linear-gradient(135deg, #666 50%, transparent 50%) calc(100% - 18px) 35px / 11px 11px no-repeat,
@@ -2297,7 +2298,7 @@
     }
 
     @media (max-width: 900px) {
-      padding: 56px 0 80px !important;
+      // padding: 56px 0 80px !important;
 
       .qa-inner {
         width: calc(100% - 40px);
@@ -2359,7 +2360,7 @@
       }
     }
 
-    @media (max-width: 520px) {
+    @media (max-width: 1000px) {
       .qa-filters {
         gap: 8px;
       }

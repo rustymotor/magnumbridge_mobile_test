@@ -1407,7 +1407,7 @@ function QaOverview() {
         <div className="qa-toolbar">
           <div className="qa-filters">
             <label>
-              <span className="blind">문의 유형</span>
+              {/* <span className="blind">문의 유형</span> */}
               <select defaultValue="all">
                 <option value="all">문의전체</option>
                 <option value="general">일반문의</option>
@@ -1416,7 +1416,7 @@ function QaOverview() {
               </select>
             </label>
             <label>
-              <span className="blind">처리 상태</span>
+              {/* <span className="blind">처리 상태</span> */}
               <select defaultValue="all">
                 <option value="all">처리전체</option>
                 <option value="waiting">답변대기</option>
