@@ -449,7 +449,6 @@ export default function App() {
                 <a href="/benefit">Recruitment</a>
                 <a href="/recruitment">My Application</a>
               </div>
-              </div>
             </details>
           </div>
 
