@@ -142,7 +142,7 @@ export default function BusinessPage({ emptyContent = false, heroSection = "Busi
           </span>
         </div>
         <div className={`visual_gradient${emptyContent ? " empty-page-visual-gradient" : ""}`}>
-          <h2>{heroTitle === "Recruitment" ? "My Application" : heroTitle}</h2>
+          <h2>{heroTitle === "Recruitment" ? "My Application" : heroTitle.toLowerCase() === "benefit" ? "Recruitment" : heroTitle}</h2>
           {heroTitle === "Recruitment" ? (
             <p>
               <span className="text-line">당사의 입사지원 내역을 확인하고 수정하거나 철회 가능합니다.</span>
