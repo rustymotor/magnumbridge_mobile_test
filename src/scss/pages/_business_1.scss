@@ -1883,7 +1883,6 @@
         transform: rotate(225deg) translate(-2px, 2px);
       }
     }
-
     .footer-submenu {
       display: grid;
       gap: 12px;
@@ -1892,10 +1891,10 @@
       a {
         width: fit-content;
         color: #929296;
-        font-size: 12px;
+        font-size: 16px !important;
         text-decoration: none;
         transition: color 160ms ease;
-
+        height: 20px;
         &:hover,
         &:focus-visible {
           color: #f4f4f5;
