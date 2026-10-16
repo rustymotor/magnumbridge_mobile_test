@@ -4438,3 +4438,11 @@ footer {
 .platform-page .platform-hero .platform-hero-shade.recruit {
   background: linear-gradient(90deg, rgba(5, 8, 13, 0.91) 0%, rgba(16, 20, 27, 0.21) 70%), linear-gradient(0deg, rgba(0, 0, 0, 0.53), transparent 45%), url("/assets/visual_top_recruit_3.jpg") center/cover no-repeat !important;
 }
+
+.platform-page .about-organization-section {
+  background: none;
+}
+
+.platform-page .about-organization-section .about-organization-chart {
+  background: none;
+}
