@@ -1,10 +1,50 @@
 import { useState } from "react";
 import ProductTabs, { observeDirectionalMoveUp } from "../components/ProductTabs.jsx";
 import SiteHeader from "../components/SiteHeader.jsx";
+import React, { useEffect, useRef } from "react";
 
 export default function BusinessPage({ emptyContent = false, heroSection = "Business", heroTitle = "Platform & Solution", productContent = false }) {
   const [activeCapability, setActiveCapability] = useState(null);
+  const mapElement = useRef(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  useEffect(() => {
+    // 1. 이미 index.html의 스크립트가 로드되어 window.naver가 존재할 때
+    if (window.naver && window.naver.maps) {
+      setIsLoaded(true);
+      return;
+    }
 
+    // 2. 만약 아직 로드가 안 되었다면, index.html에 추가했던 script 태그를 찾아서 감시합니다.
+    const scripts = document.getElementsByTagName("script");
+    for (let script of scripts) {
+      if (script.src.includes("openapi.map.naver.com")) {
+        script.addEventListener("load", () => setIsLoaded(true));
+        break;
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!isLoaded || !mapElement.current) return;
+
+    const position = new window.naver.maps.LatLng(37.5117957, 127.0482278);
+
+    const map = new window.naver.maps.Map(mapElement.current, {
+      center: position,
+      zoom: 17,
+    });
+
+    new window.naver.maps.Marker({
+      position,
+      map,
+    });
+
+    // 지도 크기 재계산
+    requestAnimationFrame(() => {
+      map.autoResize();
+      map.setCenter(position);
+    });
+  }, [isLoaded]);
   const capabilities = [
     ["IDE", "VSCode, Theia, Cursor 지원", ["통합 소스 편집 환경", "표준 템플릿 기반 개발", "실시간 오류 검증"]],
     ["Manage", "프로젝트 환경 중앙 관리", ["통합 운영 모니터링", "배포 및 형상 관리", "장애 이력 추적"]],
@@ -512,9 +552,13 @@ padding: 0 18px;
                     </p>
                   </section>
 
-                  <a className="location-map" href="https://naver.me/Fz8AVbij" target="_blank" rel="noreferrer" aria-label="매그넘브릿지 위치를 네이버 지도에서 보기">
+                  {/* <a className="location-map" href="https://naver.me/Fz8AVbij" target="_blank" rel="noreferrer" aria-label="매그넘브릿지 위치를 네이버 지도에서 보기">
                     <img src="/assets/location-reference.png" alt="서울특별시 강남구 봉은사로 443 매그넘브릿지 위치 지도" />
-                  </a>
+                  </a> */}
+                  <div style={{ padding: " 20px 0" }}>
+                    {/* 지도가 그려질 영역 */}
+                    <div ref={mapElement} style={{ width: "100%", height: "500px", border: "1px solid #ccc", borderRadius: "8px" }} />
+                  </div>
                   <a className="location-map-link" href="https://naver.me/Fz8AVbij" target="_blank" rel="noreferrer">
                     네이버 지도에서 크게 보기
                   </a>
