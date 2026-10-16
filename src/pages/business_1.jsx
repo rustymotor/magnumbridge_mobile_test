@@ -1303,7 +1303,7 @@ function VisionMission() {
             </p>
           </div>
           <div className="vision-skyline" aria-hidden="true">
-            <img src="/assets/vision-mission-reference.png" alt="" />
+            <img src="/assets/banner_3.png" alt="" />
           </div>
         </div>
 
