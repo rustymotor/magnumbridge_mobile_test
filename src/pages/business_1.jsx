@@ -7,6 +7,7 @@ export default function BusinessPage({ emptyContent = false, heroSection = "Busi
   const [activeCapability, setActiveCapability] = useState(null);
   const mapElement = useRef(null);
   const [isLoaded, setIsLoaded] = useState(false);
+
   useEffect(() => {
     // 1. 이미 index.html의 스크립트가 로드되어 window.naver가 존재할 때
     if (window.naver && window.naver.maps) {
@@ -127,7 +128,11 @@ export default function BusinessPage({ emptyContent = false, heroSection = "Busi
       <SiteHeader />
 
       <section className="platform-hero">
-        <div className="platform-hero-shade" />
+        <div
+          className={`platform-hero-shade ${
+            heroSection.toLowerCase() === "business" ? "business" : heroSection.toLowerCase() === "company" ? "company" : heroSection.toLowerCase() === "recruit" ? "recruit" : ""
+          }`}
+        />
         <div className="platform-hero-copy">
           <p>{heroSection}</p>
           <span>
