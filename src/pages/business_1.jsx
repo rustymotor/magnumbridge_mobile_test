@@ -372,7 +372,9 @@ export default function BusinessPage({ emptyContent = false, heroSection = "Busi
           </div>
 
           <nav className="footer-utility" aria-label="회사 정보">
-            <a href="#contact">회사소개서</a>
+            <a href="/assets/profile_magnumbridge_202604.pdf" target="_blank" rel="noopener noreferrer">
+              회사소개서
+            </a>
             <>
               <button type="button" className="footer-location-button" onClick={(event) => event.currentTarget.nextElementSibling.showModal()}>
                 오시는 길
@@ -581,7 +583,7 @@ padding: 0 18px;
                 </div>
               </dialog>
             </>
-            <a href="#contact">문의하기</a>
+            <a href="/qa">문의하기</a>
           </nav>
           <>
             <button type="button" className="footer-privacy privacy-dialog-trigger" onClick={(event) => event.currentTarget.nextElementSibling.showModal()}>

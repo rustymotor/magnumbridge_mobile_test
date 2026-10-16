@@ -451,7 +451,9 @@ export default function App() {
           </div>
 
           <nav className="footer-utility" aria-label="회사 정보">
-            <a href="#contact">회사소개서</a>
+            <a href="/assets/profile_magnumbridge_202604.pdf" target="_blank" rel="noopener noreferrer">
+              회사소개서
+            </a>
             <>
               <button type="button" className="footer-location-button" onClick={(event) => event.currentTarget.nextElementSibling.showModal()}>
                 오시는 길
