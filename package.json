@@ -7,7 +7,7 @@
     "dev": "vite",
     "styles": "sass src/scss/index.scss src/index.css --style=expanded --no-source-map",
     "styles:watch": "sass --watch src/scss/index.scss:src/index.css --style=expanded --no-source-map",
-    "build": "pnpm styles && vite build",
+    "build": "npm run styles && vite build",
     "preview": "vite preview",
     "format": "oxfmt"
   },
